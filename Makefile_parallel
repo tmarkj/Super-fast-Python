@@ -1,0 +1,5 @@
+parallel_sum.so : parallel_sum.c
+	gcc -O3 -shared -o parallel_sum.so -fPIC -fopenmp parallel_sum.c 
+
+clean :
+	rm parallel_sum.so 

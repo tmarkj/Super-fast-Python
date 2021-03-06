@@ -1,0 +1,5 @@
+sum.so : sum.c
+	gcc -O3 -shared -o sum.so -fPIC sum.c 
+
+clean :
+	rm sum.so 
