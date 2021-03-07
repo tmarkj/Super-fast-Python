@@ -10,7 +10,7 @@ I have no idea how to get this to work in Windows.
 
 ## Dependencies
 
-* Numpy
+* NumPy
 * gcc
 * make
 
