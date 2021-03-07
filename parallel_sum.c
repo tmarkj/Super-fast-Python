@@ -8,7 +8,7 @@ int sum(int64_t* array, int size) {
 	int i;
 	int sum = 0;
 
-	#pragma omp parallel for
+	#pragma omp parallel for simd reduction(+:sum)
 	for (i = 0; i < size; ++i) {
 		sum += array[i];
 	}
